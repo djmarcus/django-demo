@@ -29,10 +29,7 @@ spec:
     spec:
       containers:
       - name: djsite
-        # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
-        # Replace $GCLOUD_PROJECT with your project ID.
         image: us-central1-docker.pkg.dev/django-demo-393020/djsite-repo/djsite-gke:latest
-        # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8000
         env:
